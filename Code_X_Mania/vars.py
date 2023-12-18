@@ -31,7 +31,6 @@ class Var(object):
         ON_HEROKU = False
     FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'.herokuapp.com'
     URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('
-mongodb+srv://orhehehudhdebhe:DUnSxfJQnZj4wbWs@cluster0.lehocm2.mongodb.net/?retryWrites=true&w=majority'))
+    DATABASE_URL = str(getenv('mongodb+srv://orhehehudhdebhe:DUnSxfJQnZj4wbWs@cluster0.lehocm2.mongodb.net/?retryWrites=true&w=majority'))
     UPDATES_CHANNEL = str(getenv('avrkhub', None))
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "-1001362659779")).split())) 
