@@ -25,7 +25,7 @@ class Var(object):
     A_G = str(getenv('A_G'))
     if 'DYNO' in environ:
         ON_HEROKU = True
-        APP_NAME = str(getenv('APP_NAME))
+        APP_NAME = str(getenv('APP_NAME'))
     
     else:
         ON_HEROKU = False
